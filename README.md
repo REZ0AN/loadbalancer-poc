@@ -18,12 +18,13 @@ loadbalancer-poc/
 └── docs/                               # Phase wise Docs
 ```
 
-## Phases
+## Phases 
 
 | # | Phase | What you'll learn |
 |---|---|---|
 | 01 | [Network Namespaces Mental Model](./docs/ns-mental-model.md) | Network namespaces, veth pairs, Linux bridges |
-| 02 | [iptables DNAT - Simplest LoadBalancer](./docs/iptables-dnat-simplest-lb.md) | iptables DNAT, statistic module, MASQUERADE, conntrack |
+| 02 | [iptables DNAT — Simplest LoadBalancer](./docs/dnat-simplest-lb.md) | iptables DNAT, statistic module, MASQUERADE, conntrack |
+| 03 | [IPVS — Built-in Linux L4 LoadBalancer](./docs/ipvs-builtin-linux-lb.md) | IPVS NAT mode, scheduling algorithms, source hashing, per-backend stats |
 
 ## Prerequisites
 
