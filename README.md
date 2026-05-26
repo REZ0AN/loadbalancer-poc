@@ -13,6 +13,7 @@ A hands-on exploration of how Linux load balancers work under the hood, building
 ```
 loadbalancer-poc/
 ├── network-namespaces-mental-model/    # Bridge + netns + veth topology
+├── iptables-dnat-simplest-lb/          # iptables + DNAT [simplest loadbalancer]
 ├── images/                             # Reference Images
 └── docs/                               # Phase wise Docs
 ```
@@ -22,12 +23,13 @@ loadbalancer-poc/
 | # | Phase | What you'll learn |
 |---|---|---|
 | 01 | [Network Namespaces Mental Model](./docs/ns-mental-model.md) | Network namespaces, veth pairs, Linux bridges |
+| 02 | [iptables DNAT - Simplest LoadBalancer](./docs/iptables-dnat-simplest-lb.md) | iptables DNAT, statistic module, MASQUERADE, conntrack |
 
 ## Prerequisites
 
 - Linux host (or VM — Lima/UTM/Multipass all fine)
 - Root access (`sudo`)
-- Generic `python3`, `curl`, `clang`, `llvm`, `libelf-dev`, `libbpf-dev`, `libpcap-dev`, `build-essential`, `linux-tools-common`, `linux-headers-generic`, `linux-tools-generic`, `iproute2` `iputils-ping`, `dwarves`, `tcpdump`, `bind9-dnsutils`
+- Generic `python3`, `curl`, `clang`, `llvm`, `libelf-dev`, `libbpf-dev`, `libpcap-dev`, `build-essential`, `linux-tools-common`, `linux-headers-generic`, `linux-tools-generic`, `iproute2` `iputils-ping`, `dwarves`, `tcpdump`, `bind9-dnsutils`, `iptables`, `ipvsadm`, `nftables`, `conntrack`
 - Kernel Specific `linux-headers-$(uname -r)`, `linux-tools-$(uname -r)` 
 
 ## Quick Start
