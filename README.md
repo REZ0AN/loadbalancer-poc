@@ -14,7 +14,8 @@ A hands-on exploration of how Linux load balancers work under the hood, building
 loadbalancer-poc/
 ├── network-namespaces-mental-model/    # Bridge + netns + veth topology
 ├── iptables-dnat-simplest-lb/          # iptables + DNAT [simplest loadbalancer]
-├── ipvs-builtin-linux-lb/              # IPVS NAT mode, scheduling algorithms, source hashing, per-backend stats
+├── ipvs-builtin-linux-lb/              # IPVS NAT mode, scheduling, per-backend stats
+├── nftables-dnat-lb                    # nftables maps, jhash, DNAT, stateless stickiness
 ├── images/                             # Reference Images
 └── docs/                               # Phase wise Docs
 ```
