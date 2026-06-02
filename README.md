@@ -15,7 +15,8 @@ loadbalancer-poc/
 ├── network-namespaces-mental-model/    # Bridge + netns + veth topology
 ├── iptables-dnat-simplest-lb/          # iptables + DNAT [simplest loadbalancer]
 ├── ipvs-builtin-linux-lb/              # IPVS NAT mode, scheduling, per-backend stats
-├── nftables-dnat-lb                    # nftables maps, jhash, DNAT, stateless stickiness
+├── nftables-dnat-lb/                   # nftables maps, jhash, DNAT, stateless stickiness
+├── xdp-observer/                       # XDP hook, Traffic Trace before packet reach to network stack
 ├── images/                             # Reference Images
 └── docs/                               # Phase wise Docs
 ```
@@ -28,6 +29,7 @@ loadbalancer-poc/
 | 02 | [iptables DNAT — Simplest LoadBalancer](./docs/iptables-dnat-simplest-lb.md) | iptables DNAT, statistic module, MASQUERADE, conntrack |
 | 03 | [IPVS — Built-in Linux L4 LoadBalancer](./docs/ipvs-builtin-linux-lb.md) | IPVS NAT mode, scheduling algorithms, source hashing, per-backend stats |
 | 04 | [nftables — DNAT LoadBalancer with jhash](./docs/nftables-dnat-lb.md) | nftables maps, jhash flow hashing, concat DNAT, stateless stickiness |
+| 05 | [XDP Observer](./docs/xdp-observer.md) | eBPF/XDP programs, BPF verifier, XDP return codes, kernel tracing via trace_pipe |
 
 ## Prerequisites
 
@@ -50,4 +52,4 @@ Phase by Phase follow the guidelines.
 - [Linux Network Namespaces — man page](https://man7.org/linux/man-pages/man7/network_namespaces.7.html)
 - [iximiuz Labs — Container Networking](https://labs.iximiuz.com/tutorials)
 - [Cilium docs on eBPF/XDP](https://docs.cilium.io/)
-
+- [xdp-project/xdp-tutorial](https://github.com/xdp-project/xdp-tutorial)
