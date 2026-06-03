@@ -17,6 +17,8 @@ loadbalancer-poc/
 ├── ipvs-builtin-linux-lb/              # IPVS NAT mode, scheduling, per-backend stats
 ├── nftables-dnat-lb/                   # nftables maps, jhash, DNAT, stateless stickiness
 ├── xdp-observer/                       # XDP hook, Traffic Trace before packet reach to network stack
+├── xdp-drop/                           # atomic counters, map pinning, bidirectional filter policy, XDP_DROP
+├── xdp-nat-lb/                         # XDP_TX, Header rewrite, IP/TCP checksum recalculation, xdpgeneric mode
 ├── images/                             # Reference Images
 └── docs/                               # Phase wise Docs
 ```
@@ -30,6 +32,8 @@ loadbalancer-poc/
 | 03 | [IPVS — Built-in Linux L4 LoadBalancer](./docs/ipvs-builtin-linux-lb.md) | IPVS NAT mode, scheduling algorithms, source hashing, per-backend stats |
 | 04 | [nftables — DNAT LoadBalancer with jhash](./docs/nftables-dnat-lb.md) | nftables maps, jhash flow hashing, concat DNAT, stateless stickiness |
 | 05 | [XDP Observer](./docs/xdp-observer.md) | eBPF/XDP programs, BPF verifier, XDP return codes, kernel tracing via trace_pipe |
+| 06 | [XDP Drop](./docs/xdp-drop.md) | XDP_DROP, BPF maps, atomic counters, map pinning, bidirectional filter policy |
+| 07 | [XDP NAT Load Balancer](./docs/xdp-nat-lb.md) | XDP_TX, full header rewrite, IP/TCP checksum recalculation, source-port hashing, xdpgeneric mode |
 
 ## Prerequisites
 
