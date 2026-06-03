@@ -19,6 +19,7 @@ loadbalancer-poc/
 ├── xdp-observer/                       # XDP hook, Traffic Trace before packet reach to network stack
 ├── xdp-drop/                           # atomic counters, map pinning, bidirectional filter policy, XDP_DROP
 ├── xdp-nat-lb/                         # XDP_TX, Header rewrite, IP/TCP checksum recalculation, xdpgeneric mode
+├── xdp-lb-flow-table                   # XDP NAT LB with dual-entry flow table, LRU Hash
 ├── images/                             # Reference Images
 └── docs/                               # Phase wise Docs
 ```
@@ -34,6 +35,7 @@ loadbalancer-poc/
 | 05 | [XDP Observer](./docs/xdp-observer.md) | eBPF/XDP programs, BPF verifier, XDP return codes, kernel tracing via trace_pipe |
 | 06 | [XDP Drop](./docs/xdp-drop.md) | XDP_DROP, BPF maps, atomic counters, map pinning, bidirectional filter policy |
 | 07 | [XDP NAT Load Balancer](./docs/xdp-nat-lb.md) | XDP_TX, full header rewrite, IP/TCP checksum recalculation, source-port hashing, xdpgeneric mode |
+| 08 | [XDP LB with Flow Table](./docs/xdp-lb-flow-table.md) | XDP NAT LB with dual-entry flow table, LRU Hash |
 
 ## Prerequisites
 
