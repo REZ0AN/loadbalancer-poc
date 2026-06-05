@@ -19,7 +19,7 @@ loadbalancer-poc/
 ├── xdp-observer/                       # XDP hook, Traffic Trace before packet reach to network stack
 ├── xdp-drop/                           # atomic counters, map pinning, bidirectional filter policy, XDP_DROP
 ├── xdp-nat-lb/                         # XDP_TX, Header rewrite, IP/TCP checksum recalculation, xdpgeneric mode
-├── xdp-lb-flow-table                   # XDP NAT LB with dual-entry flow table, LRU Hash
+├── xdp-lb-flow-table/                  # XDP NAT LB with dual-entry flow table, LRU Hash
 ├── images/                             # Reference Images
 └── docs/                               # Phase wise Docs
 ```
@@ -36,6 +36,7 @@ loadbalancer-poc/
 | 06 | [XDP Drop](./docs/xdp-drop.md) | XDP_DROP, BPF maps, atomic counters, map pinning, bidirectional filter policy |
 | 07 | [XDP NAT Load Balancer](./docs/xdp-nat-lb.md) | XDP_TX, full header rewrite, IP/TCP checksum recalculation, source-port hashing, xdpgeneric mode |
 | 08 | [XDP LB with Flow Table](./docs/xdp-lb-flow-table.md) | XDP NAT LB with dual-entry flow table, LRU Hash |
+| 09 | [XDP Per CPU LB](./docs/xdp-percpu-lb.md) | PERCPU counters, incremental checksum |
 
 ## Prerequisites
 
@@ -59,3 +60,4 @@ Phase by Phase follow the guidelines.
 - [iximiuz Labs — Container Networking](https://labs.iximiuz.com/tutorials)
 - [Cilium docs on eBPF/XDP](https://docs.cilium.io/)
 - [xdp-project/xdp-tutorial](https://github.com/xdp-project/xdp-tutorial)
+- [RFC-1624](https://www.rfc-editor.org/info/rfc1624/)
