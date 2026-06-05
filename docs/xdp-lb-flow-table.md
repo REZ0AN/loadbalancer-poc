@@ -1,4 +1,4 @@
-# Phase 08 — XDP NAT LB with Flow Table
+# XDP NAT LB with Flow Table
 
 > The same XDP_TX load balancer as phase 07, with two fundamental limitations removed: single-client restriction and port-hash distribution, replaced by a dual-entry per-connection flow table and true round-robin.
 
