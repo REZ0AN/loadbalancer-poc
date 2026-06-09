@@ -20,6 +20,7 @@ loadbalancer-poc/
 ├── xdp-drop/                           # atomic counters, map pinning, bidirectional filter policy, XDP_DROP
 ├── xdp-nat-lb/                         # XDP_TX, Header rewrite, IP/TCP checksum recalculation, xdpgeneric mode
 ├── xdp-lb-flow-table/                  # XDP NAT LB with dual-entry flow table, LRU Hash
+├── xdp-percpu-lb/                      # PERCPU counters, incremental checksum
 ├── images/                             # Reference Images
 └── docs/                               # Phase wise Docs
 ```
